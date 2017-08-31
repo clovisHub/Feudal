@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <Button
+            android:id="@+id/btn_l_helpId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:text="@string/btn_help_loginId" />
+
+        <ImageButton
+            android:id="@+id/btn_l_goBackId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/lbl_l.usernameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/lbl_passwordId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/lbl_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_l.loginId"
+        android:text="@string/login"
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

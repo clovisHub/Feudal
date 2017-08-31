@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Feudal</string>
+    <string name="btn_login">Login</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="register">Register</string>
+    <string name="login">login</string>
+    <string name="take_a_picture">Take a picture</string>
+    <string name="s.take_a_picture">Take a picture</string>
+    <string name="btn_help_loginId">Help</string>
+    <string name="send_recover">Send</string>
+    <string name="sign_out">Sign out</string>
+    <string name="update_info">update</string>
+    <string name="message">Message</string>
+    <string name="browse">Browse</string>
+    <string name="visible">visible</string>
+    <string name="lbl_confirm">Confirm</string>
+    <string name="lbl_option_selected">option selected</string>
+    <string name="lbl_return">Return</string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="lbl_ac_showId">Show</string>
+    <string name="lbl_password">Password</string>
+    <string name="ph_search_here">Search here</string>
+    <string name="lbl_email_subLy">Email</string>
+    <string name="re_enter_password">Confirm password</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_next_save_user">Next</string>
+    <string name="lbl_upload">Upload photo</string>
+</resources>

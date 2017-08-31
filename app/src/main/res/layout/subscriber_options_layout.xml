@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_backToLoginId"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:text="@string/lbl_return" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_alignTop="@+id/imageButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/imageButton2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:layout_toRightOf="@+id/imageButton2" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_option_selected" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_email_subLy"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passId_subLy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/rentPassId_subLy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/re_enter_password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_save" />
+
+</LinearLayout>
