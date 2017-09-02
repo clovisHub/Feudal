@@ -20,6 +20,8 @@
         <activity android:name=".models.AccountUser" />
         <activity android:name=".models.HelpLogin" />
         <activity android:name=".models.Login" />
+        <activity android:name=".models.Single" />
+        <activity android:name=".models.PeopleList" />
         <activity android:name=".models.Subscriber" />
         <activity android:name=".models.SubscriberOptions" />
 
@@ -27,7 +29,6 @@
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.INTERNET" />
 
-        <activity android:name=".models.PeopleList" />
     </application>
 
 </manifest>

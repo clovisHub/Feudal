@@ -31,6 +31,7 @@ public class PeopleList extends AppCompatActivity {
     private RecyclerView recView;
     private HashMap<String, String> map;
     private RecyclerView.Adapter adapter;
+    public static String thatName;
 
     public static final String TAG= PeopleList.class.getSimpleName()+ "_TAG";
 
@@ -54,7 +55,8 @@ public class PeopleList extends AppCompatActivity {
 
 
 
-          //myTrial();
+
+        //myTrial();
 
        // adapter = new RecAdapter(map,this);
 
@@ -81,9 +83,13 @@ public class PeopleList extends AppCompatActivity {
         adapter = new RecAdapter(map,getApplicationContext());
 
         recView.setAdapter(adapter);
+
+
     }
 
     private void loadRecyclerData() {
+
+        StringRequest copyRequest = null;
 
         for(int i = 0; i < 100; i++){
 
@@ -93,6 +99,7 @@ public class PeopleList extends AppCompatActivity {
                 new Response.Listener<String>() {
                      @Override
                      public void onResponse(String response) {
+
 
                           System.out.println("You got this  "+TAG+" "+response.toString());
 
@@ -156,13 +163,16 @@ public class PeopleList extends AppCompatActivity {
                     }
                 });
 
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
+            copyRequest = stringRequest;
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+            requestQueue.add(copyRequest);
+
         }
 
         adapter = new RecAdapter(map,getApplicationContext());
 
         recView.setAdapter(adapter);
+
 
 
 
@@ -174,8 +184,6 @@ public class PeopleList extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
     }
-
-
 
 
 }
